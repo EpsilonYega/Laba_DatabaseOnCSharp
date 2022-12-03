@@ -9,3 +9,16 @@ C:\Users\Пользователь\Downloads\WindowsFormsApp1\WindowsFormsApp1\ob
 C:\Users\Пользователь\Downloads\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Пользователь\Downloads\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Пользователь\Downloads\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormAdd.resources
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormDelete.resources
+D:\Visual Studio sh#t\db1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DatabaseWorkstation.resources

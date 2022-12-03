@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class DatabaseWorkstation
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,95 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonSelect = new System.Windows.Forms.Button();
+            this.buttonSelectAll = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonDeleteElement = new System.Windows.Forms.Button();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.buttonAddElement = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // buttonSelect
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(565, 22);
-            this.textBox1.TabIndex = 0;
+            this.buttonSelect.Location = new System.Drawing.Point(533, 27);
+            this.buttonSelect.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSelect.Name = "buttonSelect";
+            this.buttonSelect.Size = new System.Drawing.Size(56, 19);
+            this.buttonSelect.TabIndex = 2;
+            this.buttonSelect.Text = "SelectEl";
+            this.buttonSelect.UseVisualStyleBackColor = true;
+            this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
+            // 
+            // buttonSelectAll
+            // 
+            this.buttonSelectAll.Location = new System.Drawing.Point(36, 334);
+            this.buttonSelectAll.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSelectAll.Name = "buttonSelectAll";
+            this.buttonSelectAll.Size = new System.Drawing.Size(72, 22);
+            this.buttonSelectAll.TabIndex = 3;
+            this.buttonSelectAll.Text = "SelectAll";
+            this.buttonSelectAll.UseVisualStyleBackColor = true;
+            this.buttonSelectAll.Click += new System.EventHandler(this.buttonSelectAll_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(52, 76);
+            this.listBox1.Location = new System.Drawing.Point(11, 62);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(565, 308);
+            this.listBox1.Size = new System.Drawing.Size(578, 264);
             this.listBox1.TabIndex = 1;
             // 
-            // button1
+            // buttonDeleteElement
             // 
-            this.button1.Location = new System.Drawing.Point(674, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Select1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonDeleteElement.Location = new System.Drawing.Point(490, 335);
+            this.buttonDeleteElement.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDeleteElement.Name = "buttonDeleteElement";
+            this.buttonDeleteElement.Size = new System.Drawing.Size(72, 20);
+            this.buttonDeleteElement.TabIndex = 6;
+            this.buttonDeleteElement.Text = "Delete";
+            this.buttonDeleteElement.UseVisualStyleBackColor = true;
+            this.buttonDeleteElement.Click += new System.EventHandler(this.buttonDeleteElement_Click);
             // 
-            // button2
+            // textBoxSearch
             // 
-            this.button2.Location = new System.Drawing.Point(674, 104);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Select2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.textBoxSearch.Location = new System.Drawing.Point(199, 26);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(330, 20);
+            this.textBoxSearch.TabIndex = 0;
             // 
-            // button3
+            // buttonAddElement
             // 
-            this.button3.Location = new System.Drawing.Point(674, 163);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Insert";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonAddElement.Location = new System.Drawing.Point(264, 334);
+            this.buttonAddElement.Name = "buttonAddElement";
+            this.buttonAddElement.Size = new System.Drawing.Size(72, 22);
+            this.buttonAddElement.TabIndex = 10;
+            this.buttonAddElement.Text = "Add";
+            this.buttonAddElement.UseVisualStyleBackColor = true;
+            this.buttonAddElement.Click += new System.EventHandler(this.buttonAddElement_Click);
             // 
-            // button4
+            // label1
             // 
-            this.button4.Location = new System.Drawing.Point(674, 221);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Looking for something? Enter ID here!";
             // 
-            // button5
+            // DatabaseWorkstation
             // 
-            this.button5.Location = new System.Drawing.Point(674, 279);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Delete";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonAddElement);
+            this.Controls.Add(this.buttonDeleteElement);
+            this.Controls.Add(this.buttonSelectAll);
+            this.Controls.Add(this.buttonSelect);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.textBoxSearch);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DatabaseWorkstation";
+            this.Text = "DatabaseWorkstation_v1.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,13 +132,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonSelect;
+        private System.Windows.Forms.Button buttonSelectAll;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonDeleteElement;
+        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Button buttonAddElement;
+        private System.Windows.Forms.Label label1;
     }
 }
 
