@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         private void buttonDeleteElement_Click(object sender, EventArgs e)
         {
             DatabaseWorkstation main = this.Owner as DatabaseWorkstation;
-            DialogResult dr = MessageBox.Show("Удалить запись?", "Удаление", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            DialogResult dr = MessageBox.Show("Delete this field?", "Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             if (dr == DialogResult.Cancel)
             {
                 var ee = new CancelEventArgs();
@@ -37,6 +37,7 @@ namespace WindowsFormsApp1
                     string query = $"DELETE FROM Worker WHERE w_id = {textBoxName.Text}";
                     OleDbCommand command = new OleDbCommand(query, main.myConnection);
                     command.ExecuteNonQuery();
+                    main.buttonSelectAll_Click(sender, e);
                     Close();
                 }
             }

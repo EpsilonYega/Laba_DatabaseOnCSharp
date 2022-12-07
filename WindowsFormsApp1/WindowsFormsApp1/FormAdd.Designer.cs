@@ -91,6 +91,7 @@
             this.textBoxSalary.Name = "textBoxSalary";
             this.textBoxSalary.Size = new System.Drawing.Size(179, 20);
             this.textBoxSalary.TabIndex = 17;
+            this.textBoxSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSalary_KeyPress);
             // 
             // textBoxStatus
             // 
@@ -98,6 +99,7 @@
             this.textBoxStatus.Name = "textBoxStatus";
             this.textBoxStatus.Size = new System.Drawing.Size(179, 20);
             this.textBoxStatus.TabIndex = 16;
+            this.textBoxStatus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxStatus_KeyPress);
             // 
             // textBoxName
             // 
@@ -105,6 +107,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(179, 20);
             this.textBoxName.TabIndex = 15;
+            this.textBoxName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxName_KeyPress);
             // 
             // buttonCloseForm
             // 

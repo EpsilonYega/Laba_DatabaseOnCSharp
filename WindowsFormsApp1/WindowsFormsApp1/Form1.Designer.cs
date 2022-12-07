@@ -35,6 +35,7 @@
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonAddElement = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonSelect
@@ -67,6 +68,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(578, 264);
             this.listBox1.TabIndex = 1;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // buttonDeleteElement
             // 
@@ -89,7 +91,7 @@
             // 
             // buttonAddElement
             // 
-            this.buttonAddElement.Location = new System.Drawing.Point(264, 334);
+            this.buttonAddElement.Location = new System.Drawing.Point(181, 333);
             this.buttonAddElement.Name = "buttonAddElement";
             this.buttonAddElement.Size = new System.Drawing.Size(72, 22);
             this.buttonAddElement.TabIndex = 10;
@@ -106,11 +108,22 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Looking for something? Enter ID here!";
             // 
+            // buttonEdit
+            // 
+            this.buttonEdit.Location = new System.Drawing.Point(331, 333);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(72, 22);
+            this.buttonEdit.TabIndex = 12;
+            this.buttonEdit.Text = "Edit";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            // 
             // DatabaseWorkstation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAddElement);
             this.Controls.Add(this.buttonDeleteElement);
@@ -139,6 +152,7 @@
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonAddElement;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonEdit;
     }
 }
 
